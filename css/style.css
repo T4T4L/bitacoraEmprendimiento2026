@@ -1,0 +1,42 @@
+/* Estilos base - inspirados en la identidad UAI */
+:root{
+	--uai-red:#ba0c2f;
+	--uai-dark:#2b2b2b;
+	--muted:#6b6b6b;
+	--bg:#f8f8f8;
+	--card-bg:#ffffff;
+	--radius:8px;
+}
+
+*{box-sizing:border-box}
+body{
+	margin:0;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	color:var(--uai-dark);
+	background:var(--bg);
+	-webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:980px;margin:0 auto;padding:24px}
+
+.uai-header{background:linear-gradient(180deg,var(--uai-red),#941021);color:#fff;padding:28px 0}
+.site-title{margin:0;font-size:1.6rem;letter-spacing:0.4px}
+.site-subtitle{margin:4px 0 0;font-size:0.95rem;opacity:0.95}
+
+.main-content{padding:28px 24px}
+.intro p{margin:0 0 18px;color:var(--muted)}
+
+.weeks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.week-card{
+	display:block;padding:18px;border-radius:var(--radius);background:var(--card-bg);text-decoration:none;color:var(--uai-dark);
+	box-shadow:0 1px 3px rgba(0,0,0,0.06);transition:transform .14s ease,box-shadow .14s ease;border:1px solid rgba(0,0,0,0.04)
+}
+.week-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+.week-card .muted{display:block;margin-top:6px;color:var(--muted);font-size:0.9rem}
+
+.week-card.disabled{opacity:0.6;pointer-events:none}
+
+.footer{margin-top:28px;padding-top:18px;border-top:1px solid rgba(0,0,0,0.04);color:var(--muted);font-size:0.9rem}
+
+@media (max-width:420px){.container{padding:16px}.site-title{font-size:1.2rem}}
+
