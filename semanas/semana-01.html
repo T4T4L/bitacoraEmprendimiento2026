@@ -2,125 +2,114 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Semana 01 - Bitácora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semana 01 | Bitácora de Emprendimiento</title>
   <link rel="stylesheet" href="../css/style.css">
-  <meta name="description" content="Entrega formativa: diagnóstico inicial para robot de monitoreo - TerraMater">
+  <meta name="description" content="Semana 01: oportunidad de monitoreo avanzado para Viña TerraMater">
 </head>
-<body>
+<body class="presentation-page">
   <header class="uai-header">
-    <div class="container">
-      <h1 class="site-title">Semana 01 — Diagnóstico inicial</h1>
-      <p class="site-subtitle">Proyecto: Robot de monitoreo — Viña TerraMater (Isla de Maipo)</p>
+    <div class="container header-content">
+      <p class="eyebrow">BITÁCORA DE EMPRENDIMIENTO · UAI</p>
+      <h1 class="site-title">Semana 01</h1>
+      <p class="site-subtitle">Diagnóstico y oportunidad · Robot de monitoreo para Viña TerraMater</p>
     </div>
   </header>
 
-  <main class="container main-content">
-    <section class="cover">
-      <h2>Portada</h2>
-      <p><strong>Nombre del proyecto:</strong> Robot de monitoreo para Viña TerraMater</p>
-      <p><strong>Integrantes:</strong> [Agregar nombres del equipo]</p>
-      <p><strong>Fecha:</strong> [Agregar fecha]</p>
+  <main class="presentation container">
+    <section class="cover slide" aria-labelledby="cover-title">
+      <p class="slide-kicker">ENTREGA FORMATIVA · KICKOFF</p>
+      <h2 id="cover-title">Observar mejor<br>para decidir mejor</h2>
+      <p class="lead">Exploración inicial del problema, los usuarios afectados y las soluciones existentes en Viña TerraMater, Isla de Maipo.</p>
+      <div class="cover-meta">
+        <p><strong>Proyecto</strong><br>Robot de monitoreo para viñedos</p>
+        <p><strong>Integrantes</strong><br>[Agregar nombres del equipo]</p>
+        <p><strong>Fecha</strong><br>[Agregar fecha]</p>
+      </div>
     </section>
 
-    <section>
-      <h2>1. Objetivo</h2>
-      <p>Llegar a la sesión de Kickoff con una comprensión inicial del problema, los usuarios afectados y las soluciones existentes. El foco de esta entrega es explorar la oportunidad y justificar por qué es relevante para Viña TerraMater.</p>
+    <section class="slide" aria-labelledby="problem-title">
+      <div class="slide-heading"><span class="slide-number">01</span><p class="slide-kicker">PROBLEMA Y CAUSAS</p></div>
+      <h2 id="problem-title">El viñedo cambia.<br>El monitoreo debe seguirle el ritmo.</h2>
+      <p>El manejo de un viñedo requiere observar continuamente cómo evolucionan las plantas y detectar diferencias entre sectores para orientar inspecciones y decisiones en terreno. Sin embargo, gran parte de esta información todavía depende de recorridos manuales, muestreos sobre un número limitado de plantas y distintas fuentes de datos que no siempre están integradas.</p>
+      <p>El problema no es necesariamente la ausencia de información, sino la dificultad para obtenerla con suficiente cobertura, frecuencia, resolución espacial y trazabilidad. Esto puede dificultar el seguimiento sistemático de plantas o pequeños segmentos y la comparación de su evolución en el tiempo.</p>
+      <p>Como consecuencia, algunas anomalías o diferencias de desarrollo pueden depender de que una persona las detecte durante un recorrido, mientras que la información obtenida mediante sensores o imágenes puede requerir posteriormente una validación en terreno antes de transformarse en una acción.</p>
+      <p>El desafío consiste en aumentar la capacidad de observación del viñedo sin sustituir el juicio agronómico, generando información localizada, repetible y útil para dirigir mejor la atención de las personas.</p>
+      <div class="cause-panel">
+        <h3>Posibles causas</h3>
+        <ul class="cause-list">
+          <li>Alta variabilidad dentro del viñedo.</li>
+          <li>Monitoreo manual difícil de escalar.</li>
+          <li>Tecnologías con diferentes escalas de observación.</li>
+          <li>Fragmentación de observaciones, imágenes, sensores y registros.</li>
+        </ul>
+      </div>
+      <p class="source-note">Fuentes: OIV (2019); Ammoniaci et al. (2021).</p>
     </section>
 
-    <section>
-      <h2>2. Problema y causas</h2>
-      <h3>Descripción del problema</h3>
-      <p>
-        En Viña TerraMater (Isla de Maipo) el monitoreo de plagas y enfermedades —en particular botritis y oídio— se realiza de manera predominantemente manual y visual, apoyado en la experiencia de los trabajadores más experimentados. Esta aproximación no considera un seguimiento sistemático por planta ni registros cuantitativos continuos, lo que impide detectar brotes a tiempo y optimizar intervenciones. La falta de trazabilidad y de datos granulares puede provocar aplicaciones de fitosanitarios menos oportunas o excesivas, aumentando costos, riesgos fitosanitarios y el impacto ambiental. Además, la dependencia de observaciones humanas hace que la calidad del monitoreo sea variable entre turnos y temporadas, y limita la capacidad de escalar prácticas de manejo integrado en la viña.
-      </p>
-
-      <h3>Posibles causas</h3>
-      <ul>
-        <li>Ausencia de un sistema de monitoreo automatizado por planta que registre índices de infestación y condiciones microclimáticas.</li>
-        <li>Recursos limitados (tiempo y personal) para inspecciones frecuentes y detalladas en toda la extensión del viñedo.</li>
-        <li>Falta de herramientas accesibles y asequibles que integren datos ambientales, imágenes y alertas tempranas.</li>
-        <li>Dependencia de la experiencia subjetiva del trabajador, sin protocolos estandarizados de registro.</li>
-      </ul>
-
-      <h3>Fuentes que respaldan la información</h3>
-      <ol>
-        <li><a href="https://es.wikipedia.org/wiki/Botrytis">Botrytis (Wikipedia)</a> — descripción general de la enfermedad y su impacto en viñedos.</li>
-        <li><a href="https://es.wikipedia.org/wiki/O%C3%ADdio">Oídio (Wikipedia)</a> — información sobre el hongo, factores que favorecen su aparición y manejo.</li>
-      </ol>
+    <section class="slide" aria-labelledby="users-title">
+      <div class="slide-heading"><span class="slide-number">02</span><p class="slide-kicker">USUARIOS POTENCIALES</p></div>
+      <h2 id="users-title">Dos perspectivas,<br>una misma necesidad.</h2>
+      <div class="user-grid">
+        <article class="user-card">
+          <span class="card-index">01</span>
+          <h3>Encargados de campo y operarios</h3>
+          <p><strong>Quiénes son</strong><br>Trabajan directamente en el viñedo, recorren las hileras, realizan labores y suelen ser el primer punto de detección de una planta o sector diferente.</p>
+          <p><strong>Problema y efecto</strong><br>Deben observar grandes superficies durante recorridos repetitivos y demandantes. No necesariamente cada observación queda registrada de manera precisa o asociada a una ubicación específica.</p>
+          <p><strong>Necesidad</strong><br>Información que indique dónde concentrar la inspección, complementando su experiencia en terreno.</p>
+        </article>
+        <article class="user-card">
+          <span class="card-index">02</span>
+          <h3>Jefaturas de campo, agrónomos y área gerencial</h3>
+          <p><strong>Quiénes son</strong><br>Utilizan la información del campo para supervisar labores, comparar sectores, planificar inspecciones y apoyar decisiones.</p>
+          <p><strong>Problema y efecto</strong><br>Deben transformar observaciones de distintas fuentes en información comprensible y comparable. Un promedio por cuartel puede ocultar variabilidad interna.</p>
+          <p><strong>Necesidad</strong><br>Una visión espacial y temporal que muestre dónde están las diferencias, cómo evolucionan y qué requiere atención.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>3. Usuarios potenciales</h2>
-      <h3>Grupo 1: Trabajadores de campo (podadores/encargados de manejo)</h3>
-      <p>
-        Quiénes son: Operarios y trabajadores responsables de la inspección y cuidado diario de las vides.\n
-        Qué problema enfrentan: Dificultad para detectar plagas y enfermedades de forma temprana en todas las plantas por limitaciones de tiempo y cobertura.
-        Cómo les afecta: Incremento del trabajo reactivo, decisiones basadas en estimaciones, mayor uso de productos fitosanitarios y riesgo de pérdida de rendimiento.
-      </p>
-
-      <h3>Grupo 2: Encargados técnicos / administrador de la viña</h3>
-      <p>
-        Quiénes son: Agrónomos y gerentes que planifican aplicaciones, compras y estrategias de manejo integrado.
-        Qué problema enfrentan: Falta de datos cuantitativos y registros históricos por planta para evaluar efectividad de intervenciones.
-        Cómo les afecta: Dificultades para optimizar costos, justificar decisiones y demostrar cumplimiento de buenas prácticas hacia clientes y certificaciones.
-      </p>
+    <section class="slide" aria-labelledby="solutions-title">
+      <div class="slide-heading"><span class="slide-number">03</span><p class="slide-kicker">SOLUCIONES ACTUALES</p></div>
+      <h2 id="solutions-title">El monitoreo ya existe.<br>Está distribuido en distintas escalas.</h2>
+      <p>Actualmente el monitoreo del viñedo se aborda mediante métodos y tecnologías complementarias.</p>
+      <div class="solution-grid">
+        <article class="solution-card"><h3>Inspección y muestreo manual</h3><p><strong>Qué hace</strong><br>Personas recorren el campo, observan plantas y realizan mediciones o muestreos.</p><p><strong>Ventaja</strong><br>Interpretación, flexibilidad y análisis directo de situaciones complejas.</p><p><strong>Limitación</strong><br>La cobertura depende del tiempo y la mano de obra; es difícil registrar planta por planta.</p></article>
+        <article class="solution-card"><h3>Sensores fijos e IoT</h3><p><strong>Qué hacen</strong><br>Registran variables ambientales, meteorológicas, de suelo o de riego.</p><p><strong>Ventaja</strong><br>Mediciones automatizadas con alta frecuencia temporal.</p><p><strong>Limitación</strong><br>Cada sensor representa una ubicación y no todas las diferencias entre plantas.</p></article>
+        <article class="solution-card"><h3>Satélites y drones</h3><p><strong>Qué hacen</strong><br>Capturan imágenes para analizar variabilidad, vigor o temperatura.</p><p><strong>Ventaja</strong><br>Cubren grandes superficies rápidamente y generan mapas comparables.</p><p><strong>Limitación</strong><br>La perspectiva aérea requiere interpretación y validación posterior.</p></article>
+      </div>
+      <p class="callout">Estas tecnologías son principalmente complementarias: observan el cultivo desde diferentes escalas.</p>
     </section>
 
-    <section>
-      <h2>4. Soluciones actuales</h2>
-      <ol>
-        <li>
-          <strong>Inspección manual y muestreos puntuales</strong>
-          <p>Qué hace: Personal recorre secciones del viñedo y realiza observaciones visuales, registrando incidencias.
-          Ventajas: Bajo costo directo y aprovechamiento de experiencia local.
-          Limitaciones: Cobertura limitada, detección tardía y falta de datos continuos.</p>
-        </li>
-
-        <li>
-          <strong>Programas de aplicación preventiva (calendarios de riego/fungicidas)</strong>
-          <p>Qué hace: Aplicación programada de tratamientos basados en calendarios estacionales.
-          Ventajas: Reduce la probabilidad de brotes si las condiciones son previsibles.
-          Limitaciones: Uso innecesario de químicos en ausencia de riesgo, costos y impacto ambiental.</p>
-        </li>
-
-        <li>
-          <strong>Monitoreo con sensores y teledetección (drones/índices vegetación)</strong>
-          <p>Qué hace: Uso de imágenes aéreas y sensores para detectar estrés vegetal y patrones espaciales.
-          Ventajas: Cobertura amplia y posibilidad de identificar zonas críticas.
-          Limitaciones: Requiere inversión, procesamiento de datos y no siempre detecta plagas a nivel de planta sin modelos específicos.</p>
-        </li>
-      </ol>
+    <section class="slide" aria-labelledby="benchmarks-title">
+      <div class="slide-heading"><span class="slide-number">04</span><p class="slide-kicker">REFERENTES DE MONITOREO AVANZADO</p></div>
+      <h2 id="benchmarks-title">Referentes que acercan<br>los datos a la planta.</h2>
+      <div class="benchmark-list">
+        <article class="benchmark"><h3>Scout AMP</h3><p>Solución comercial basada en visión computacional e IA que genera información a nivel de planta. Integra inventario, mapeo, comportamiento de la vegetación, historial y planificación.</p><p><strong>Ventaja:</strong> transforma observaciones en información para priorizar acciones de los equipos de campo.</p><p><strong>Limitación:</strong> está desarrollado para otros mercados y no resuelve por sí solo la navegación y captura autónoma en condiciones locales.</p></article>
+        <article class="benchmark"><h3>VineScout</h3><p>Robot terrestre para monitoreo no invasivo. En pruebas en Portugal utilizó información térmica, ambiental y espectral para generar mapas del estado hídrico.</p><p><strong>Ventaja:</strong> demuestra que una plataforma terrestre autónoma puede recorrer hileras y adquirir información georreferenciada repetible.</p><p><strong>Limitación:</strong> las variables indirectas requieren calibración y validación para ser indicadores agronómicos confiables.</p></article>
+        <article class="benchmark"><h3>Monitoreo mediante UAV</h3><p>Drones con cámaras RGB, multiespectrales o térmicas obtienen información espacial de alta resolución y cubren grandes superficies.</p><p><strong>Limitación:</strong> su perspectiva es principalmente aérea; una plataforma terrestre puede complementarla con una visión lateral y proximal.</p></article>
+      </div>
     </section>
 
-    <section>
-      <h2>5. Uso de IA (declaración)</h2>
-      <p>Herramienta utilizada: Asistente de IA (ChatGPT) — se empleó como apoyo para redactar y estructurar la bitácora, generar ideas de causas y ordenar las secciones. El equipo revisó y ajustó todo el contenido final.</p>
+    <section class="slide final-slide" aria-labelledby="opportunity-title">
+      <div class="slide-heading"><span class="slide-number">05</span><p class="slide-kicker">OPORTUNIDAD Y REFERENCIAS</p></div>
+      <h2 id="opportunity-title">Más datos no bastan.<br>Hay que saber dónde mirar.</h2>
+      <p class="lead">La oportunidad consiste en explorar una forma de aumentar la cobertura, frecuencia y trazabilidad del monitoreo en terreno mediante la captura automatizada de información a nivel de planta.</p>
+      <p>El objetivo no sería reemplazar la inspección humana ni realizar diagnósticos agronómicos automáticamente, sino generar información que permita identificar dónde están ocurriendo cambios, diferencias o anomalías y dirigir de manera más eficiente la atención de los equipos de campo.</p>
+      <p>Cada recorrido podría contribuir a generar un registro georreferenciado e histórico de las plantas, comparar su evolución e incorporar progresivamente nuevas variables. La oportunidad no está solamente en recopilar más datos, sino en transformarlos en información para priorizar dónde observar y actuar.</p>
+      <div class="references">
+        <h3>Referencias · APA 7</h3>
+        <ol>
+          <li>Ammoniaci, M., Kartsiotis, S.-P., Perria, R., &amp; Storchi, P. (2021). <em>State of the art of monitoring technologies and data processing for precision viticulture</em>. Agriculture, 11(3), 201.</li>
+          <li>Fernández-Novales, J., Saiz-Rubio, V., Barrio, I., Rovira-Más, F., Cuenca-Cuenca, A., Santos Alves, F., Valente, J., Tardaguila, J., &amp; Diago, M. P. (2021). <em>Monitoring and mapping vineyard water status using non-invasive technologies by a ground robot</em>. Remote Sensing, 13(14), 2830.</li>
+          <li>Organisation Internationale de la Vigne et du Vin. (2019). <em>OIV definition and general principles on precision viticulture</em> (Resolution OIV-VITI 593-2019).</li>
+          <li>Pádua, L., Adão, T., Sousa, A., Peres, E., &amp; Sousa, J. J. (2020). <em>Individual grapevine analysis in a multi-temporal context using UAV-based multi-sensor imagery</em>. Remote Sensing, 12(1), 139.</li>
+        </ol>
+      </div>
+      <p class="ai-note"><strong>Uso de IA:</strong> Se utilizó inteligencia artificial generativa como apoyo para estructurar la información, revisar la redacción e identificar fuentes relevantes. El equipo revisó, contrastó y seleccionó el contenido y las fuentes incorporadas.</p>
     </section>
 
-    <section>
-      <h2>6. Referencias</h2>
-      <ul>
-        <li>Botrytis — https://es.wikipedia.org/wiki/Botrytis</li>
-        <li>Oídio — https://es.wikipedia.org/wiki/O%C3%ADdio</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Checklist</h2>
-      <ul>
-        <li>✅ Problema claramente definido.</li>
-        <li>✅ Al menos 3 causas identificadas.</li>
-        <li>✅ Al menos 2 grupos de usuarios descritos.</li>
-        <li>✅ Al menos 3 soluciones actuales analizadas.</li>
-        <li>✅ Fuentes citadas.</li>
-        <li>✅ Uso de IA declarado.</li>
-      </ul>
-    </section>
-
-    <p><a href="../index.html">← Volver al índice</a></p>
-
-    <footer class="footer">Documento orientativo — entrega formativa</footer>
+    <nav class="presentation-nav" aria-label="Navegación de la bitácora"><a href="../index.html">← Volver al índice</a></nav>
+    <footer class="footer">Semana 01 · Documento formativo</footer>
   </main>
 </body>
 </html>
