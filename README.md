@@ -8,7 +8,7 @@ Este sitio web tiene como propósito registrar los avances, presentaciones y ent
 
 Puedes visitar la versión en vivo de nuestra bitácora en el siguiente enlace:
 
-> **[Insertar enlace a la página web aquí]**
+> **[https://t4t4l.github.io/bitacoraEmprendimiento2026/]**
 
 ## 👥 Integrantes del Equipo
 
