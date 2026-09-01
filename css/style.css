@@ -1,17 +1,18 @@
-/* Estilos base - inspirados en la identidad UAI */
+/* Estilos base - inspirados en la identidad UAI y diseño moderno */
 :root{
 	--uai-green:#174a36;
-	--uai-dark:#2b2b2b;
-	--muted:#6b6b6b;
-	--bg:#f8f8f8;
+	--uai-wine:#7c1d31;
+	--uai-dark:#1f1f1f;
+	--muted:#737373;
+	--bg:#f4f5f4;
 	--card-bg:#ffffff;
-	--radius:8px;
+	--radius:16px;
 }
 
 *{box-sizing:border-box}
 body{
 	margin:0;
-	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 	color:var(--uai-dark);
 	background:var(--bg);
 	-webkit-font-smoothing:antialiased;
@@ -19,29 +20,44 @@ body{
 
 .container{max-width:980px;margin:0 auto;padding:24px}
 
-.uai-header{background:linear-gradient(180deg,var(--uai-green),#0d3024);color:#fff;padding:28px 0}
-.uai-header .container{display:flex;align-items:center;gap:18px}
-.site-logo{display:block;height:72px;object-fit:cover;flex:0 0 72px}
+.uai-header{background:linear-gradient(135deg,var(--uai-wine),var(--uai-green));color:#fff;padding:36px 0;box-shadow: 0 4px 12px rgba(0,0,0,0.1)}
+.uai-header .container{display:flex;align-items:center;gap:24px}
+.site-logo{display:block;height:72px;object-fit:cover;flex:0 0 72px;border-radius:12px;box-shadow: 0 2px 8px rgba(0,0,0,0.2)}
 .header-copy{min-width:0}
-.site-title{margin:0;font-size:1.6rem;letter-spacing:0.4px}
-.site-subtitle{margin:4px 0 0;font-size:0.95rem;opacity:0.95}
+.site-title{margin:0;font-size:1.8rem;font-weight:700;letter-spacing:0.2px;text-shadow: 1px 1px 2px rgba(0,0,0,0.2)}
+.site-subtitle{margin:6px 0 0;font-size:1.05rem;opacity:0.9;font-weight:500}
 
-.main-content{padding:28px 24px}
-.intro p{margin:0 0 18px;color:var(--muted)}
+.main-content{padding:36px 24px}
+.intro p{margin:0 0 24px;color:var(--muted);font-size:1.1rem}
 
-.weeks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.section-container { margin-bottom: 40px; }
+.section-container h2 { color: var(--uai-wine); font-size: 1.5rem; margin-bottom: 20px; border-bottom: 2px solid var(--uai-wine); padding-bottom: 8px; display: inline-block; }
+
+.weeks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 .week-card{
-	display:block;padding:18px;border-radius:var(--radius);background:var(--card-bg);text-decoration:none;color:var(--uai-dark);
-	box-shadow:0 1px 3px rgba(0,0,0,0.06);transition:transform .14s ease,box-shadow .14s ease;border:1px solid rgba(0,0,0,0.04)
+	display:flex;flex-direction:column;justify-content:center;padding:24px;border-radius:var(--radius);background:var(--card-bg);text-decoration:none;color:var(--uai-dark);
+	box-shadow:0 4px 6px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.08);transition:all .25s ease;border:1px solid rgba(0,0,0,0.02);
+	font-weight:600;font-size:1.1rem;position:relative;overflow:hidden;
 }
-.week-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,0.08)}
-.week-card .muted{display:block;margin-top:6px;color:var(--muted);font-size:0.9rem}
+.week-card::before {
+	content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--uai-green); transition: width 0.25s ease;
+}
+.week-card:hover{transform:translateY(-5px);box-shadow:0 12px 24px rgba(0,0,0,0.1);border-color:rgba(0,0,0,0.05)}
+.week-card:hover::before { width: 6px; }
 
-.week-card.disabled{opacity:0.6;pointer-events:none}
+.delivery-card::before { background: var(--uai-wine); }
+.delivery-card:hover::before { width: 6px; background: var(--uai-wine); }
 
-.footer{margin-top:28px;padding-top:18px;border-top:1px solid rgba(0,0,0,0.04);color:var(--muted);font-size:0.9rem}
+.week-card .muted{display:block;margin-top:8px;color:var(--muted);font-size:0.9rem;font-weight:400}
 
-@media (max-width:420px){.container{padding:16px}.site-title{font-size:1.2rem}.site-logo{width:58px;height:58px;flex-basis:58px}.uai-header .container{gap:12px}}
+.week-card.disabled{opacity:0.5;pointer-events:none;filter: grayscale(100%);}
+.week-card.disabled::before { background: var(--muted); }
+
+.footer{margin-top:40px;padding-top:24px;border-top:2px solid rgba(0,0,0,0.05);color:var(--muted);font-size:0.95rem;text-align:center;}
+.footer p { margin: 4px 0; }
+.footer p:first-child { font-weight: 600; color: var(--uai-dark); margin-bottom: 12px; }
+
+@media (max-width:420px){.container{padding:20px}.site-title{font-size:1.4rem}.site-logo{height:60px;flex-basis:60px}.uai-header .container{gap:16px}.week-card{padding:20px;}}
 
 /* Presentacion semanal */
 .presentation-page{background:#eeeae6;color:#292929}
