@@ -168,9 +168,3 @@ p { font-size: 34px; line-height: 1.5; margin-bottom: 30px; max-width: 1300px; c
 .card h3 { font-size: 30px; color: var(--vine); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
 .card p { font-size: 26px; margin-bottom: 0; }
 
-/* Controles */
-.controls { position: absolute; bottom: 50px; right: 50px; display: flex; gap: 15px; z-index: 100; opacity: 0; transition: opacity 0.3s; }
-#presentation-container:hover .controls { opacity: 0.5; }
-.controls:hover { opacity: 1 !important; }
-.btn-nav { background: var(--vine); color: var(--paper); border: none; width: 64px; height: 64px; border-radius: 50%; font-size: 24px; cursor: pointer; display: flex; justify-content: center; align-items: center; }
-.btn-nav:hover { background: var(--wine); }

@@ -43,22 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Button navigation
-    document.getElementById('btn-next').addEventListener('click', (e) => {
-        e.stopPropagation();
-        nextSlide();
-    });
-    
-    document.getElementById('btn-prev').addEventListener('click', (e) => {
-        e.stopPropagation();
-        prevSlide();
-    });
-
-    // Click anywhere to advance (except buttons)
-    presentationContainer.addEventListener('click', () => {
-        nextSlide();
-    });
-
     // Responsive scaling
     function resizePresentation() {
         const windowWidth = window.innerWidth;
