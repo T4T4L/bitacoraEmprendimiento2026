@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400">
+    <rect width="1000" height="400" fill="#F6F3EC" />
+    <g font-family="sans-serif" text-anchor="middle" font-size="16">
+        <circle cx="500" cy="100" r="50" fill="#C68A38" opacity="0.8" />
+        <text x="500" y="105" fill="#202420" font-weight="bold">CLIMA</text>
+        <text x="500" y="170" fill="#6E293B">Demanda atmosférica</text>
+        
+        <path d="M500,180 L500,240" stroke="#7D8B62" stroke-width="4" marker-end="url(#arrow)" />
+        
+        <rect x="400" y="250" width="200" height="80" fill="#D8CEB8" rx="10" />
+        <text x="500" y="295" fill="#202420" font-weight="bold">PLANTA</text>
+        
+        <path d="M500,330 L500,370" stroke="#7D8B62" stroke-width="4" />
+        <rect x="0" y="370" width="1000" height="30" fill="#7D8B62" opacity="0.5" />
+        <text x="500" y="390" fill="#202420" font-weight="bold">SUELO (Disponibilidad) + RIEGO</text>
+    </g>
+</svg>

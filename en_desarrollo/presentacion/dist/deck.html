@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentación Bitácora</title>
+    <link rel="stylesheet" href="../src/styles/deck.css">
+</head>
+<body>
+    <div id="deck"></div>
+    
+    <script>
+        async function loadDeck() {
+            const manifestRes = await fetch('../content/manifest.json');
+            const manifest = await manifestRes.json();
+            const deck = document.getElementById('deck');
+            
+            for (let id of manifest.slides) {
+                const slideRes = await fetch(`../content/slides/${id}.json`);
+                const slideData = await slideRes.json();
+                
+                const slideEl = document.createElement('div');
+                slideEl.className = 'slide';
+                if (slideData.type === 'key_problem') slideEl.classList.add('dark-green', 'layout-key-problem');
+                if (slideData.type === 'cover') slideEl.classList.add('dark');
+                
+                let innerHTML = `<div class="slide-chapter">${slideData.chapter}</div>`;
+                
+                if (slideData.type === 'interview') {
+                    slideEl.classList.add('layout-interview');
+                    innerHTML += `
+                        <h2>${slideData.title}</h2>
+                        <div class="role">${slideData.role}</div>
+                        <div class="insight">Concepto: ${slideData.concept}</div>
+                        <div class="findings">${slideData.findings}</div>
+                    `;
+                } else if (slideData.type === 'key_problem') {
+                    innerHTML += `
+                        <div style="font-size:24px; color:var(--amber); margin-bottom: 30px;">PROBLEMA DEFINIDO</div>
+                        <h1>${slideData.content}</h1>
+                    `;
+                } else {
+                    innerHTML += `
+                        <h1>${slideData.title}</h1>
+                        <p>${slideData.content || ''}</p>
+                        ${slideData.subtitle ? `<h2>${slideData.subtitle}</h2>` : ''}
+                        ${slideData.context ? `<p>${slideData.context}</p>` : ''}
+                    `;
+                }
+                
+                slideEl.innerHTML = innerHTML;
+                deck.appendChild(slideEl);
+            }
+            
+            if(deck.children.length > 0) deck.children[0].classList.add('active');
+        }
+        
+        loadDeck();
+        
+        let currentSlide = 0;
+        window.addEventListener('keydown', (e) => {
+            const slides = document.querySelectorAll('.slide');
+            if(e.key === 'ArrowRight' && currentSlide < slides.length - 1) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide++;
+                slides[currentSlide].classList.add('active');
+            } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide--;
+                slides[currentSlide].classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

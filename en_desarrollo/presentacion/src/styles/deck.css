@@ -1,0 +1,108 @@
+
+:root {
+ --paper: #F6F3EC;
+ --ink: #202420;
+ --vine: #284638;
+ --wine: #6E293B;
+ --olive: #7D8B62;
+ --sand: #D8CEB8;
+ --amber: #C68A38;
+}
+
+body {
+    background-color: var(--ink);
+    color: var(--paper);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.slide {
+    width: 1920px;
+    height: 1080px;
+    background-color: var(--paper);
+    color: var(--ink);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 80px;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide.dark {
+    background-color: var(--vine);
+    color: var(--paper);
+}
+
+.slide.dark-green {
+    background-color: #173126;
+    color: var(--paper);
+}
+
+.slide h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.slide h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.slide p {
+    font-size: 35px;
+    line-height: 1.5;
+    max-width: 70%;
+}
+
+.slide-chapter {
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-size: 24px;
+    color: var(--olive);
+}
+
+/* Specific layouts */
+.layout-interview .role {
+    font-size: 30px;
+    color: var(--wine);
+    margin-bottom: 50px;
+}
+.layout-interview .insight {
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--vine);
+    margin-top: 50px;
+}
+.layout-interview .findings {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.layout-key-problem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.layout-key-problem h1 {
+    font-size: 60px;
+    font-weight: 400;
+    max-width: 1400px;
+    line-height: 1.4;
+}
