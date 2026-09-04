@@ -47,10 +47,28 @@ for index, slide_id in enumerate(manifest['slides']):
         context = slideData.get("context", "")
         
         innerHTML += f'<h1>{title}</h1>\n'
-        if content:
-            innerHTML += f'<p>{content}</p>\n'
         if subtitle:
             innerHTML += f'<h2>{subtitle}</h2>\n'
+            
+        # Inyectar SVG basado en el ID de la lámina
+        svg_img = ""
+        if slide_id == "012":
+            svg_img = '<img src="../assets/illustrations/fenologia.svg" style="width:1000px; margin-top:20px;">'
+        elif slide_id == "015":
+            svg_img = '<img src="../assets/illustrations/agua.svg" style="width:800px; margin-top:20px;">'
+        elif slide_id == "017":
+            svg_img = '<img src="../assets/illustrations/rendimiento.svg" style="width:1000px; margin-top:20px;">'
+        elif slide_id == "021" or slide_id == "033":
+            svg_img = '<img src="../assets/illustrations/variabilidad.svg" style="width:1000px; margin-top:20px;">'
+        elif slide_id == "034" or slide_id == "035":
+            svg_img = '<img src="../assets/illustrations/arbol_problema.svg" style="width:900px; margin-top:20px;">'
+            
+        if content:
+            innerHTML += f'<p>{content}</p>\n'
+        
+        if svg_img:
+            innerHTML += f'<div style="text-align:center;">{svg_img}</div>\n'
+            
         if context:
             innerHTML += f'<p>{context}</p>\n'
 
