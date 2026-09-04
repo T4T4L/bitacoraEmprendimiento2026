@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <title>Presentación Bitácora</title>
     <link rel="stylesheet" href="../src/styles/deck.css">
+    <style>
+        .nav-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        .nav-btn {
+            background: var(--wine, #6E293B);
+            color: var(--paper, #F6F3EC);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+        }
+        .nav-btn:hover { opacity: 1; }
+        .slide-counter {
+            position: fixed;
+            bottom: 25px;
+            left: 20px;
+            color: var(--olive, #7D8B62);
+            font-size: 20px;
+            font-family: sans-serif;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
     <div id="deck">
@@ -315,20 +346,53 @@
 
     </div>
     
+    <div class="nav-controls">
+        <button class="nav-btn" onclick="prevSlide()">Anterior</button>
+        <button class="nav-btn" onclick="nextSlide()">Siguiente</button>
+    </div>
+    <div class="slide-counter" id="counter">1 / 46</div>
+    
     <script>
         let currentSlide = 0;
-        window.addEventListener('keydown', (e) => {
-            const slides = document.querySelectorAll('.slide');
-            if(e.key === 'ArrowRight' && currentSlide < slides.length - 1) {
+        const slides = document.querySelectorAll('.slide');
+        const counter = document.getElementById('counter');
+        
+        function updateCounter() {
+            counter.innerText = (currentSlide + 1) + " / " + slides.length;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
                 slides[currentSlide].classList.remove('active');
                 currentSlide++;
                 slides[currentSlide].classList.add('active');
-            } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                updateCounter();
+            }
+        }
+        
+        function prevSlide() {
+            if (currentSlide > 0) {
                 slides[currentSlide].classList.remove('active');
                 currentSlide--;
                 slides[currentSlide].classList.add('active');
+                updateCounter();
+            }
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if(e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                prevSlide();
             }
         });
+
+        // Permitir avanzar haciendo clic en el área de la presentación
+        document.getElementById('deck').addEventListener('click', (e) => {
+            nextSlide();
+        });
+        
+        updateCounter();
     </script>
 </body>
 </html>
