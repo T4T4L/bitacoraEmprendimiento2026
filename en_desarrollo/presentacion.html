@@ -10,7 +10,7 @@
 
     <div id="presentation-container">
         
-        <!-- 01 PORTADA -->
+        <!-- SLIDE 1: PORTADA (Requisito 50-52) -->
         <section class="slide layout-cover dark-mode">
             <div class="bg-media-placeholder">Fondo: Video sutil dron viñedo atardecer</div>
             <div class="bg-overlay"></div>
@@ -21,97 +21,649 @@
             </div>
         </section>
 
-        <!-- ORIGEN -->
-        <section class="slide"><div class="chapter-indicator">ORIGEN</div><h1>Nos interesa la robótica y su impacto en la agricultura.</h1><p>Como equipo nos mueve la tecnología y entender dónde puede generar un impacto real. Antes de decidir qué automatizar, dedicamos tiempo a explorar dónde la tecnología podría generar valor.</p></section>
-        <section class="slide"><div class="chapter-indicator">ORIGEN</div><h1>La tecnología agrícola no es solo automatizar labores.</h1><p>Encontramos diferentes áreas: ejecutar labores físicas, mover y transportar, monitorear, y gestionar información.</p></section>
-        <section class="slide"><div class="chapter-indicator">ORIGEN</div><h1>Nos llamó especialmente la atención el monitoreo.</h1><p>Porque antes de actuar sobre una planta hay que saber exactamente qué le ocurre. Y después de actuar, hay que volver a observar.</p></section>
-        <section class="slide"><div class="chapter-indicator">ORIGEN</div><h1>El ciclo de la decisión agrícola.</h1><div class="escalera"><div class="esc-step"><div class="esc-num">1</div><div class="esc-desc">Observar</div></div><div class="esc-step"><div class="esc-num">2</div><div class="esc-desc">Detectar</div></div><div class="esc-step"><div class="esc-num">3</div><div class="esc-desc">Interpretar</div></div><div class="esc-step"><div class="esc-num">4</div><div class="esc-desc">Decidir y Actuar</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">ORIGEN</div><h1>Elegimos la vid vinífera.</h1><p>La exploración buscando un cultivo desafiante nos llevó a los viñedos. Descubrimos que la vid es particularmente interesante desde el punto de vista del monitoreo agronómico.</p></section>
+        <!-- ==================== ORIGEN ==================== -->
 
-        <!-- CONTEXTO -->
-        <section class="slide"><div class="chapter-indicator">CONTEXTO</div><h1>La industria mundial del vino se está ajustando.</h1><p>El consumo global caerá a ≈ 208 M hl en 2025 (-2,7%).</p><div class="evidence-tag">OIV 2025</div></section>
-        <section class="slide"><div class="chapter-indicator">CONTEXTO</div><h1>La presión sobre los viñedos chilenos.</h1><p>Los datos de enero a julio de 2026 muestran una caída del -13,3% en volumen exportado y -10,6% en valor.</p><div class="evidence-tag">ODEPA 2026</div></section>
-        <section class="slide"><div class="chapter-indicator">CONTEXTO</div><h1>El campo sigue requiriendo decisiones.</h1><p>Incluso con menores márgenes, la calidad del vino depende del viñedo. La presión económica limita los recursos para observar, pero la exigencia agrícola se mantiene.</p></section>
-        <section class="slide"><div class="chapter-indicator">CONTEXTO</div><h1>Para entender el problema necesitábamos un caso real.</h1><div class="bg-media-placeholder">Foto: Viñedos TerraMater, Isla de Maipo</div><p style="position:relative; z-index:10;">Viña TerraMater nos abrió el viñedo, convirtiéndose en nuestro terreno de exploración para entender las fricciones diarias.</p></section>
-
-        <!-- COMPRENDER LA VID -->
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>La vid es un cultivo perenne.</h1><p>Una misma planta permanece durante años y renueva sus estructuras anuales. Esto permite construir un historial productivo, sanitario e hídrico planta por planta.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Fenología: La planta cambia drásticamente.</h1><p>Las necesidades de monitoreo cambian con la etapa de desarrollo. Lo que es importante observar en noviembre no es lo mismo que en marzo.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>El ciclo anual (Parte I)</h1><div class="timeline"><div class="tl-node"><div class="tl-dot dark"></div><div class="tl-label">Dormancia</div></div><div class="tl-node"><div class="tl-dot"></div><div class="tl-label">Brotación</div></div><div class="tl-node"><div class="tl-dot"></div><div class="tl-label">Crecimiento</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>El ciclo anual (Parte II)</h1><div class="timeline"><div class="tl-node"><div class="tl-dot highlight"></div><div class="tl-label">Floración / Cuaja</div></div><div class="tl-node"><div class="tl-dot wine"></div><div class="tl-label">Envero</div></div><div class="tl-node"><div class="tl-dot wine"></div><div class="tl-label">Maduración</div></div><div class="tl-node"><div class="tl-dot dark"></div><div class="tl-label">Cosecha</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>La vid funciona como un sistema complejo.</h1><p>Una sola variable rara vez explica completamente el estado de la planta. Las interacciones son continuas.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Ecuación del sistema.</h1><div class="equation-row"><div class="eq-box">Genética</div><div class="eq-op">×</div><div class="eq-box">Ambiente</div><div class="eq-op">×</div><div class="eq-box">Manejo</div><div class="eq-op">=</div><div class="eq-result">Estado Real</div></div></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Estado Hídrico.</h1><p>Humedad del suelo ≠ estado hídrico de la planta.<br>Clima (demanda) → Suelo (disponibilidad) → Riego (entrega) → Planta (respuesta).</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>La Canopia.</h1><p>Conecta múltiples factores: fotosíntesis, exposición, microclima, sanidad, maduración, calidad de aplicaciones y vigor.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Sanidad y anomalías localizadas.</h1><p>Problemas como oídio o Botrytis pueden comenzar en unas pocas plantas. La escala del problema sanitario suele ser mucho menor que la escala del cuartel.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Rendimiento.</h1><p>Los kg/ha son el resultado, no la explicación. Dos cuarteles pueden tener el mismo rendimiento final por razones completamente diferentes.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Ecuación del Rendimiento.</h1><div class="equation-row" style="flex-wrap:wrap;"><div class="eq-box">Plantas / ha</div><div class="eq-op">×</div><div class="eq-box">Brotes / pl.</div><div class="eq-op">×</div><div class="eq-box">Racimos / br.</div><div class="eq-op">×</div><div class="eq-box">Bayas / rac.</div><div class="eq-op">×</div><div class="eq-box">Peso Baya</div></div></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Escalas de observación.</h1><p>punto → planta → segmento → hilera → zona → cuartel.</p><p>Muchas decisiones se ejecutan por cuartel, pero la planta es la unidad para detectar excepciones.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Observar no es diagnosticar.</h1><p>La captura de datos por sí sola no genera valor sin interpretación humana. Un sistema riguroso debe conservar la incertidumbre inicial.</p></section>
-        <section class="slide"><div class="chapter-indicator">COMPRENDER LA VID</div><h1>Escalera de Diagnóstico.</h1><div class="escalera"><div class="esc-step"><div class="esc-num">1</div><div class="esc-title">Observación</div><div class="esc-desc">Imagen, temperatura.</div></div><div class="esc-step"><div class="esc-num">2</div><div class="esc-title">Indicador</div><div class="esc-desc">Volumen, tasa.</div></div><div class="esc-step"><div class="esc-num">3</div><div class="esc-title">Interpretación</div><div class="esc-desc">Posible estrés.</div></div><div class="esc-step"><div class="esc-num">4</div><div class="esc-title">Diagnóstico</div><div class="esc-desc">Causa confirmada.</div></div></div></section>
-
-        <!-- ENTRAR AL CAMPO -->
-        <section class="slide"><div class="chapter-indicator">ENTRAR AL CAMPO</div><h1>El viñedo real.</h1><p>Observamos el entorno y analizamos actividades, actores, flujo de información y decisiones en TerraMater.</p></section>
-        <section class="slide"><div class="chapter-indicator">ENTRAR AL CAMPO</div><h1>Framework AEIOU: A - Activities.</h1><p>Inspeccionar plantas, podar, evaluar sanidad, supervisar sistemas de riego. Tareas físicamente exigentes y continuas.</p></section>
-        <section class="slide"><div class="chapter-indicator">ENTRAR AL CAMPO</div><h1>Framework AEIOU: E - Environment.</h1><p>Hileras, sectores, topografía variable, grandes distancias. Alta radiación solar y microclimas cambiantes.</p></section>
-        <section class="slide"><div class="chapter-indicator">ENTRAR AL CAMPO</div><h1>Framework AEIOU: I - Interactions.</h1><p>Operario con la planta (visual, táctil). Viticultor analizando el reporte agregado. Gerencia planificando presupuesto.</p></section>
-        <section class="slide"><div class="chapter-indicator">ENTRAR AL CAMPO</div><h1>Framework AEIOU: O - Objects.</h1><p>Vides, postes, alambres, libretas de terreno, planillas, tijeras de poda, sensores fijos.</p></section>
-        <section class="slide"><div class="chapter-indicator">ENTRAR AL CAMPO</div><h1>Framework AEIOU: U - Users.</h1><p>Operarios, supervisores, viticultores, enólogos, gerentes y administradores de campo.</p></section>
-        <section class="slide"><div class="chapter-indicator">ENTRAR AL CAMPO</div><h1>Cadena operacional y flujo de información.</h1><p>OPERACIÓN EN CAMPO (observan) → VITICULTURA (interpreta / prioriza) → GERENCIA (coordina recursos / decide).</p></section>
-
-        <!-- PERSONAS -->
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><h1>Entrevistas en terreno.</h1><p>Entrevistamos a nueve actores clave para entender cómo fluye la información y dónde están los dolores reales del monitoreo agronómico.</p></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: SIMPLICIDAD</div><div class="interview-name">Carlos Bendek</div><div class="interview-role">Agrónomo</div></div><div class="interview-col-right"><div class="interview-insight">"La fricción operacional puede destruir el valor de una buena tecnología."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: TEMPORADA</div><div class="interview-name">Rodrigo Moraga</div><div class="interview-role">Experiencia Viñedos</div></div><div class="interview-col-right"><div class="interview-insight">"No existe un único monitoreo del viñedo: las preguntas cambian con la planta."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: COSTO</div><div class="interview-name">Marcelo Prado</div><div class="interview-role">Administrador Viña</div></div><div class="interview-col-right"><div class="interview-insight">"Aumentar información sin demostrar retorno no resuelve el problema."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: ESCALA</div><div class="interview-name">S. Hormazábal</div><div class="interview-role">Viticultor y Enólogo</div></div><div class="interview-col-right"><div class="interview-insight">"En grandes superficies es difícil mantener una visión precisa y frecuente de lo que ocurre."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: EXIGENCIA</div><div class="interview-name">Karim Reuse</div><div class="interview-role">TerraMater</div></div><div class="interview-col-right"><div class="interview-insight">"Los casos más exigentes (Zinfandel) ayudan a revelar los límites del sistema actual."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: EXPERIENCIA</div><div class="interview-name">Don Cloro</div><div class="interview-role">Operario de campo</div></div><div class="interview-col-right"><div class="interview-insight">"Parte del conocimiento del viñedo vive en las personas, no está digitalizado."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: COBERTURA</div><div class="interview-name">Manuel Fuentes</div><div class="interview-role">Viticultor TerraMater</div></div><div class="interview-col-right"><div class="interview-insight">"El muestreo hace posible manejar la escala, pero sacrifica cobertura."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: VALOR</div><div class="interview-name">N. Lea-Plaza</div><div class="interview-role">Ingeniero Agrónomo</div></div><div class="interview-col-right"><div class="interview-insight">"La calidad del sistema no se mide por cuántos datos captura, sino por cuáles justifican ser capturados."</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">PERSONAS</div><div class="layout-interview"><div class="interview-col-left"><div class="kicker">CONCEPTO: INFORMACIÓN</div><div class="interview-name">Manuel Cisterna</div><div class="interview-role">Gerente Gral. TerraMater</div></div><div class="interview-col-right"><div class="interview-insight">"La reducción de estructura organizacional genera una brecha de información, no solo de mano de obra."</div></div></div></section>
-        
-        <!-- DEFINICIÓN -->
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Patrones que se repiten.</h1><p>Limitación de cobertura, dependencia del conocimiento individual, variabilidad espacial y la necesidad urgente de que el dato sea accionable frente a la presión económica.</p></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Customer Journey (Fricciones actuales).</h1><p>1. Aparece una pregunta → 2. Recorrido / Muestreo (lento) → 3. Dato aislado → 4. Interpretación parcial → 5. Acción (potencialmente tardía).</p></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Síntesis: Separar el problema de sus causas.</h1><p>La falta de personal o la escala gigante del viñedo son condiciones de origen (causas), NO son el problema central a resolver.</p></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Causas (Condiciones base).</h1><div class="pt-causas" style="display:flex; flex-wrap:wrap; gap:20px;"><div class="pt-causa">Escala del viñedo</div><div class="pt-causa">Variabilidad espacial</div><div class="pt-causa">Limitación de personal</div><div class="pt-causa">Presión económica</div></div></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Efectos (Consecuencias).</h1><div class="pt-efectos" style="display:flex; gap:20px;"><div class="pt-efecto">Anomalías locales sin observar</div><div class="pt-efecto">Reacción tardía</div><div class="pt-efecto">Dificultad para priorizar</div></div></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Árbol del problema visualizado.</h1><div class="problem-tree"><div class="pt-row"><div class="pt-efecto">Efectos: Incertidumbre</div></div><div class="pt-arrow"></div><div class="pt-problema">Brecha de Observación Agronómica</div><div class="pt-arrow"></div><div class="pt-row"><div class="pt-causa">Causas: Escala y Costos</div></div></div></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Jobs To Be Done.</h1><ul style="font-size:36px; margin-left: 40px; line-height:1.8;"><li>Detectar dónde necesita mirar.</li><li>Entender qué está cambiando.</li><li>Priorizar dónde actuar con recursos limitados.</li></ul></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Usuario y Comprador.</h1><p><strong>Usuario:</strong> Responsable agronómico / viticultor que necesita conocer el estado del campo.<br><br><strong>Comprador:</strong> Gerencia u operaciones que busca rentabilidad y eficiencia. Quien utiliza la información no siempre es quien decide pagar por ella.</p></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>Punto de Vista (POV).</h1><p style="font-size:32px; font-style:italic;">"Un responsable agronómico de un viñedo cuya escala supera su capacidad de inspección necesita mantener una visión frecuente y localizada, porque los muestreos disponibles no permiten observar con continuidad toda la variabilidad."</p></section>
-        <section class="slide"><div class="chapter-indicator">DEFINICIÓN</div><h1>El Insight Principal.</h1><p>El problema no es la falta de datos en abstracto; es la falta de observación repetible, localizada y trazable que pueda convertirse en decisiones.</p></section>
-        <section class="slide layout-problem"><div class="kicker">PROBLEMA DEFINIDO</div><h1>En viñedos de gran extensión existe una brecha entre el nivel de observación que requiere la variabilidad del cultivo y la capacidad disponible para mantener esa observación de forma frecuente, sistemática y trazable.</h1></section>
-
-        <!-- ALTERNATIVAS -->
-        <section class="slide"><div class="chapter-indicator">ALTERNATIVAS</div><h1>Formas actuales de mirar el viñedo.</h1><p>Scouting humano, sensores fijos, satélites, drones, plataformas digitales, robótica internacional.</p></section>
-        <section class="slide"><div class="chapter-indicator">ALTERNATIVAS</div><h1>Benchmark: Ninguna resuelve todo.</h1><p>Las tecnologías existentes resuelven partes distintas del problema, exigiendo intercambiar cobertura por detalle o frecuencia por interpretación.</p></section>
-        <section class="slide"><div class="chapter-indicator">ALTERNATIVAS</div><h1>Satélites, Drones y Sensores fijos.</h1><p>Satélites y drones cubren gran área pero requieren validación en tierra. Los sensores fijos entregan continuidad temporal pero solo representan un punto en un mar de variabilidad.</p></section>
-        <section class="slide"><div class="chapter-indicator">ALTERNATIVAS</div><h1>Scouting Manual.</h1><p>Sigue siendo el estándar de oro en interpretación y resolución de problemas, pero físicamente no escala en cientos de hectáreas.</p></section>
-        <section class="slide"><div class="chapter-indicator">ALTERNATIVAS</div><h1>Estado del arte: Robótica.</h1><p>Scout AMP, VineScout, VINBOT, PhytoPatholoBot, Thorvald. La frontera internacional intenta acercar el sensor directamente a la planta mediante plataformas móviles terrestres.</p></section>
-        <section class="slide"><div class="chapter-indicator">ALTERNATIVAS</div><h1>La brecha en Chile.</h1><p>Madurez tecnológica ≠ accesibilidad local. ¿Existen estas plataformas comerciales robóticas operando económicamente en viñedos chilenos hoy?</p></section>
-
-        <!-- OPORTUNIDAD -->
-        <section class="slide"><div class="chapter-indicator">OPORTUNIDAD</div><h1>Dimensión del mercado vitícola.</h1><p>TAM: Chile cuenta con 116.962 hectáreas de vides viníferas.<br>SAM: La Región Metropolitana concentra 8.898 hectáreas (aprox. 7,6%).</p><div class="evidence-tag">CATASTRO VITÍCOLA SAG 2024</div></section>
-        <section class="slide"><div class="chapter-indicator">OPORTUNIDAD</div><h1>TerraMater como punto de partida.</h1><p>No son solo "una empresa que entrevistamos". TerraMater nos abrió el viñedo, mostró interés genuino y es nuestro contexto real de investigación para profundizar en validaciones futuras.</p></section>
-        <section class="slide"><div class="chapter-indicator">OPORTUNIDAD</div><h1>PESTEL (Contexto Macro).</h1><p>Económico: Ajuste de la industria, menores márgenes.<br>Tecnológico: Auge de la digitalización, falta de integración local.<br>Ambiental: Clima cambiante exige mayor eficiencia en riego y sanidad.</p></section>
-
-        <!-- CIERRE -->
-        <section class="slide"><div class="chapter-indicator">CIERRE</div><h1>El problema está definido.</h1><p>No estamos tratando de descubrir cuál es el problema. Existe una brecha demostrada de observación escalable. Quedan precisiones operacionales antes de idear.</p></section>
-        <section class="slide"><div class="chapter-indicator">CIERRE</div><h1>Próximos pasos hacia la ideación.</h1><p>Precisar operacionalmente el problema: completar la entrevista pospuesta con la Gerencia de Operaciones de TerraMater y estimar el esfuerzo real del monitoreo manual en horas-hombre.</p></section>
-        
-        <!-- REFERENCIAS -->
-        <section class="slide"><div class="chapter-indicator">REFERENCIAS</div><h1>Literatura Técnica.</h1><p>Abbatantuono et al. (2024).<br>OIV (2019, 2025).<br>ODEPA (2026).<br>Catastro Vitícola SAG (2024).</p></section>
-
-        <!-- 65 CIERRE VISUAL -->
-        <section class="slide dark-mode" style="justify-content:center;">
-            <h1 style="color:var(--sand); text-align:center; font-size:100px;">Bitácora 01 completada.</h1>
-            <h2 style="color:white; text-align:center;">Próxima etapa: Ideación.</h2>
+        <!-- SLIDE 2: ORIGEN - Motivación del equipo (Requisito 2.A) -->
+        <section class="slide">
+            <div class="chapter-indicator">ORIGEN</div>
+            <h1>Nos interesa la robótica y su impacto en la agricultura.</h1>
+            <p>Como equipo nos interesa la robótica y entender dónde puede generar un impacto real en agricultura.</p>
         </section>
 
-        <!-- UI -->
-        <div id="page-counter" class="page-indicator"></div>
+        <!-- SLIDE 3: ORIGEN - Exploración de valor (Requisito 3.2) -->
+        <section class="slide">
+            <div class="chapter-indicator">ORIGEN</div>
+            <h1>Antes de decidir qué automatizar...</h1>
+            <p>Exploramos dónde la tecnología podría generar un valor significativo y real en el campo, más allá de la simple automatización de labores repetitivas.</p>
+        </section>
+
+        <!-- SLIDE 4: ORIGEN - Áreas encontradas (Requisito 3.3) -->
+        <section class="slide">
+            <div class="chapter-indicator">ORIGEN</div>
+            <h1>Encontramos diferentes áreas de acción tecnológica.</h1>
+            <ul style="font-size:36px; margin-left: 40px; line-height:1.8;">
+                <li>Ejecutar labores físicas.</li>
+                <li>Mover y transportar insumos.</li>
+                <li><strong>Monitorear.</strong></li>
+                <li>Gestionar información.</li>
+            </ul>
+        </section>
+
+        <!-- SLIDE 5: ORIGEN - Foco en monitoreo (Requisito 3.4) -->
+        <section class="slide">
+            <div class="chapter-indicator">ORIGEN</div>
+            <h1>Nos llamó especialmente la atención el monitoreo.</h1>
+            <p>Porque antes de actuar sobre una planta, hay que saber qué ocurre. Y después de actuar, hay que volver a observar.</p>
+        </section>
+
+        <!-- SLIDE 6: ORIGEN - Ciclo observar-actuar (Requisito 3.4) -->
+        <section class="slide">
+            <div class="chapter-indicator">ORIGEN</div>
+            <h1>La secuencia base de la agricultura.</h1>
+            <p style="font-size: 40px; text-align:center; margin-top:60px; color:var(--vine); font-weight:600;">
+                Observar → Detectar → Interpretar → Decidir → Actuar → Volver a observar
+            </p>
+        </section>
+
+        <!-- SLIDE 7: ORIGEN - Llevados a la vid vinífera (Requisito 3.5) -->
+        <section class="slide">
+            <div class="chapter-indicator">ORIGEN</div>
+            <h1>La exploración nos llevó a la vid vinífera.</h1>
+            <p>Buscando un entorno con alta complejidad y valor agronómico, identificamos a la viticultura como un espacio ideal para profundizar.</p>
+        </section>
+
+        <!-- ==================== CONTEXTO ==================== -->
+
+        <!-- SLIDE 8: CONTEXTO - Por qué la vid es interesante (Requisito 3.6) -->
+        <section class="slide">
+            <div class="chapter-indicator">CONTEXTO</div>
+            <h1>¿Por qué la vid es particularmente interesante para el monitoreo?</h1>
+            <p>Porque es perenne, estacional, altamente variable, exigente agronómicamente, dependiente del objetivo enológico y capaz de acumular un historial por planta durante muchos años.</p>
+        </section>
+
+        <!-- SLIDE 9: CONTEXTO - Industria mundial del vino (Contexto general) -->
+        <section class="slide">
+            <div class="chapter-indicator">CONTEXTO</div>
+            <h1>La industria mundial del vino se está ajustando.</h1>
+            <p>Proyecciones indican que el consumo global caerá a ≈ 208 M hl en 2025 (-2,7%), presionando la eficiencia productiva en el viñedo.</p>
+            <div class="evidence-tag">OIV 2025</div>
+        </section>
+
+        <!-- SLIDE 10: CONTEXTO - Industria chilena (Contexto) -->
+        <section class="slide">
+            <div class="chapter-indicator">CONTEXTO</div>
+            <h1>La presión económica en Chile.</h1>
+            <p>Datos recientes (enero a julio de 2026) muestran una caída del -13,3% en volumen exportado y -10,6% en valor. Los viñedos deben hacer más con menos recursos.</p>
+            <div class="evidence-tag">ODEPA 2026</div>
+        </section>
+
+        <!-- SLIDE 11: CONTEXTO - Entrada a TerraMater (Requisito 3.8 / 10 / 11) -->
+        <section class="slide">
+            <div class="chapter-indicator">CONTEXTO</div>
+            <div class="bg-media-placeholder">Foto Real: Viñedos TerraMater, Isla de Maipo (Requisito 11)</div>
+            <div style="position:relative; z-index:10; background:rgba(246, 243, 236, 0.9); padding:40px; border-radius:12px;">
+                <h1>Para entender el problema necesitábamos trabajar con una viña real.</h1>
+                <p>TerraMater nos abrió el viñedo. Nos permitió acceso al campo, conversamos con todos los niveles y mostraron interés en acompañar la validación.</p>
+            </div>
+        </section>
+
+        <!-- ==================== COMPRENDER LA VID ==================== -->
+
+        <!-- SLIDE 12: COMPRENDER LA VID - Sistema (Requisito 14) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>La vid funciona como un sistema.</h1>
+            <p>Su estado no depende de un solo factor. Variables como agua, clima, suelo, canopia, vigor, sanidad y fenología interactúan constantemente.</p>
+        </section>
+
+        <!-- SLIDE 13: COMPRENDER LA VID - Ecuación del sistema (Requisito 14) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>El estado real de la planta.</h1>
+            <div class="equation-row">
+                <div class="eq-box">Genética</div><div class="eq-op">×</div>
+                <div class="eq-box">Ambiente</div><div class="eq-op">×</div>
+                <div class="eq-box">Manejo</div><div class="eq-op">=</div>
+                <div class="eq-result">Estado de la Vid</div>
+            </div>
+            <p style="margin-top:40px; text-align:center;">Una sola variable rara vez explica completamente el estado de la planta.</p>
+        </section>
+
+        <!-- SLIDE 14: COMPRENDER LA VID - Longevidad e historial (Requisito 15) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Longevidad e Historial.</h1>
+            <p>Al ser perenne, una misma planta permanece durante años y renueva estructuras anuales. Esto habilita conceptualmente poder comparar la planta con su propio historial hídrico, sanitario y productivo a través del tiempo.</p>
+        </section>
+
+        <!-- SLIDE 15: COMPRENDER LA VID - Fenología intro (Requisito 16) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Fenología: El reloj biológico.</h1>
+            <p>Lo importante que debemos observar cambia drásticamente durante la temporada.</p>
+        </section>
+
+        <!-- SLIDE 16: COMPRENDER LA VID - Timeline Fenología 1 (Requisito 16) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Evolución Fenológica (I).</h1>
+            <div class="timeline">
+                <div class="tl-node"><div class="tl-dot dark"></div><div class="tl-label">Dormancia</div></div>
+                <div class="tl-node"><div class="tl-dot"></div><div class="tl-label">Brotación</div></div>
+                <div class="tl-node"><div class="tl-dot"></div><div class="tl-label">Crecimiento</div></div>
+                <div class="tl-node"><div class="tl-dot highlight"></div><div class="tl-label">Floración</div></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 17: COMPRENDER LA VID - Timeline Fenología 2 (Requisito 16) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Evolución Fenológica (II).</h1>
+            <div class="timeline">
+                <div class="tl-node"><div class="tl-dot highlight"></div><div class="tl-label">Cuaja</div></div>
+                <div class="tl-node"><div class="tl-dot"></div><div class="tl-label">Desarrollo Baya</div></div>
+                <div class="tl-node"><div class="tl-dot wine"></div><div class="tl-label">Envero</div></div>
+                <div class="tl-node"><div class="tl-dot wine"></div><div class="tl-label">Maduración</div></div>
+                <div class="tl-node"><div class="tl-dot dark"></div><div class="tl-label">Cosecha</div></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 18: COMPRENDER LA VID - Estado Hídrico Intro (Requisito 17) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Estado Hídrico.</h1>
+            <p>Saber cuánta agua hay en el suelo no basta para entender qué está sintiendo la planta.</p>
+        </section>
+
+        <!-- SLIDE 19: COMPRENDER LA VID - Esquema Hídrico (Requisito 17) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Flujo Hídrico del Sistema.</h1>
+            <div style="display:flex; justify-content:center; align-items:center; gap:20px; margin-top:60px;">
+                <div class="eq-box" style="background:var(--sand);">Clima<br><span style="font-size:16px;">(Demanda atmosférica)</span></div> <div class="eq-op">↓</div>
+                <div class="eq-box" style="background:var(--olive); color:white;">Suelo<br><span style="font-size:16px;">(Disponibilidad)</span></div> <div class="eq-op">↓</div>
+                <div class="eq-box" style="background:var(--dark-vine); color:white;">Riego<br><span style="font-size:16px;">(Entrega)</span></div> <div class="eq-op">↓</div>
+                <div class="eq-result">Planta<br><span style="font-size:16px;">(Respuesta)</span></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 20: COMPRENDER LA VID - Humedad != Estado (Requisito 17) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Un insight agronómico clave.</h1>
+            <p style="font-size:45px; text-align:center; color:var(--wine); font-weight:600; margin-top:80px;">
+                Humedad del suelo ≠ Estado hídrico de la planta.
+            </p>
+            <p style="text-align:center;">La temperatura de la canopia, por ejemplo, es una señal indirecta mucho más fiable de su estrés real.</p>
+        </section>
+
+        <!-- SLIDE 21: COMPRENDER LA VID - Canopia (Requisito 18) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>La Canopia.</h1>
+            <p>La estructura del follaje no es solo estética. Conecta variables críticas del cultivo que definen la calidad final de la uva.</p>
+        </section>
+
+        <!-- SLIDE 22: COMPRENDER LA VID - Conexiones Canopia (Requisito 18) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Esquema de la Canopia.</h1>
+            <div class="grid-3" style="margin-top:20px;">
+                <div class="card"><h3>Fotosíntesis</h3><p>Motor energético de la planta.</p></div>
+                <div class="card"><h3>Microclima</h3><p>Humedad y temperatura interna.</p></div>
+                <div class="card"><h3>Exposición</h3><p>Luz solar directa a racimos.</p></div>
+                <div class="card"><h3>Sanidad</h3><p>Ventilación preventiva.</p></div>
+                <div class="card"><h3>Maduración</h3><p>Equilibrio azúcar/acidez.</p></div>
+                <div class="card"><h3>Vigor</h3><p>Expresión vegetativa del cuartel.</p></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 23: COMPRENDER LA VID - Rendimiento Intro (Requisito 19) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Rendimiento: Una visión crítica.</h1>
+            <p>Los kg/ha son el resultado, no la explicación. Dos cuarteles pueden tener el mismo rendimiento final por razones completamente diferentes.</p>
+        </section>
+
+        <!-- SLIDE 24: COMPRENDER LA VID - Ecuación de Rendimiento (Requisito 19) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Componentes del Rendimiento.</h1>
+            <div class="equation-row" style="flex-wrap:wrap; justify-content:center;">
+                <div class="eq-box">Plantas productivas / ha</div><div class="eq-op">×</div>
+                <div class="eq-box">Brotes / planta</div><div class="eq-op">×</div>
+                <div class="eq-box">Racimos / brote</div><div class="eq-op">×</div>
+                <div class="eq-box">Bayas / racimo</div><div class="eq-op">×</div>
+                <div class="eq-box">Peso medio de baya</div>
+            </div>
+        </section>
+
+        <!-- SLIDE 25: COMPRENDER LA VID - Sanidad (Requisito 20) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Sanidad: La escala oculta.</h1>
+            <p>Una anomalía (como oídio, Botrytis, daños o virus) puede ser altamente localizada en sus etapas tempranas.</p>
+            <p style="color:var(--wine); font-weight:600;">La escala del problema puede ser mucho menor que la escala del cuartel.</p>
+        </section>
+
+        <!-- SLIDE 26: COMPRENDER LA VID - Observación != Diagnóstico (Requisito 21) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Observación ≠ Diagnóstico.</h1>
+            <p>Un sistema de monitoreo riguroso debe conservar la incertidumbre y no saltar conclusiones automáticas.</p>
+        </section>
+
+        <!-- SLIDE 27: COMPRENDER LA VID - Escalera Visual (Requisito 21) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>La Escalera del Diagnóstico.</h1>
+            <div class="escalera">
+                <div class="esc-step"><div class="esc-num">1</div><div class="esc-title">Observación</div><div class="esc-desc">(Ej: Imagen satelital, Temperatura hoja)</div></div>
+                <div class="esc-step"><div class="esc-num">2</div><div class="esc-title">Indicador</div><div class="esc-desc">(Ej: Volumen canopia, Tasa fotosintética)</div></div>
+                <div class="esc-step"><div class="esc-num">3</div><div class="esc-title">Interpretación</div><div class="esc-desc">(Ej: Posible estrés hídrico o vigor anómalo)</div></div>
+                <div class="esc-step" style="border-left:8px solid var(--wine);"><div class="esc-num">4</div><div class="esc-title">Diagnóstico</div><div class="esc-desc">(Causa confirmada en terreno)</div></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 28: COMPRENDER LA VID - Escalas de Monitoreo (Requisito 22) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Escalas de Monitoreo.</h1>
+            <p style="font-size: 32px; font-weight:600; text-align:center; color:var(--olive); letter-spacing:3px; margin-top:80px;">
+                PUNTO → PLANTA → SEGMENTO → HILERA → ZONA → CUARTEL
+            </p>
+        </section>
+
+        <!-- SLIDE 29: COMPRENDER LA VID - Planta vs Cuartel (Requisito 22) -->
+        <section class="slide">
+            <div class="chapter-indicator">COMPRENDER LA VID</div>
+            <h1>Planta vs. Cuartel.</h1>
+            <p>La planta es una unidad muy valiosa para detectar excepciones y construir un historial. Sin embargo, en la práctica operacional, muchas decisiones se terminan ejecutando por segmentos o cuarteles completos.</p>
+        </section>
+
+        <!-- ==================== ENTRAR AL CAMPO ==================== -->
+
+        <!-- SLIDE 30: ENTRAR AL CAMPO - Entorno (Requisito 3.9) -->
+        <section class="slide">
+            <div class="chapter-indicator">ENTRAR AL CAMPO</div>
+            <h1>Comprendiendo el viñedo real.</h1>
+            <p>Luego de estudiar la vid desde la disciplina, entramos a Viña TerraMater para observar el entorno, las actividades, los actores, el flujo de información y la alta dependencia del conocimiento humano.</p>
+        </section>
+
+        <!-- SLIDE 31: ENTRAR AL CAMPO - AEIOU Intro (Requisito 23) -->
+        <section class="slide">
+            <div class="chapter-indicator">ENTRAR AL CAMPO</div>
+            <h1>Framework AEIOU.</h1>
+            <p>Aplicamos esta herramienta de diseño para mapear de manera sistemática los componentes de la observación agronómica en el campo real.</p>
+        </section>
+
+        <!-- SLIDE 32: ENTRAR AL CAMPO - A (Requisito 23) -->
+        <section class="slide">
+            <div class="chapter-indicator">ENTRAR AL CAMPO</div>
+            <h1>AEIOU: Activities (Actividades)</h1>
+            <ul style="font-size:36px; margin-left: 40px; line-height:1.8;">
+                <li>Inspeccionar el estado general del cuartel.</li>
+                <li>Podar y supervisar labores manuales.</li>
+                <li>Identificar problemas de riego y sanidad en terreno.</li>
+                <li>Registrar muestreos manuales.</li>
+            </ul>
+        </section>
+
+        <!-- SLIDE 33: ENTRAR AL CAMPO - E (Requisito 23) -->
+        <section class="slide">
+            <div class="chapter-indicator">ENTRAR AL CAMPO</div>
+            <h1>AEIOU: Environment (Entorno)</h1>
+            <ul style="font-size:36px; margin-left: 40px; line-height:1.8;">
+                <li>Hileras extendidas sobre cientos de hectáreas.</li>
+                <li>Sectores con topografía y exposición solar variables.</li>
+                <li>Condiciones climáticas cambiantes y limitación de tiempo.</li>
+            </ul>
+        </section>
+
+        <!-- SLIDE 34: ENTRAR AL CAMPO - I (Requisito 23) -->
+        <section class="slide">
+            <div class="chapter-indicator">ENTRAR AL CAMPO</div>
+            <h1>AEIOU: Interactions (Interacciones)</h1>
+            <p>La información no fluye de manera automática. Depende de las interacciones:<br><br>
+            <strong>Operario → Viticultor → Administración.</strong><br>
+            Cualquier fricción aquí significa pérdida de información valiosa.</p>
+        </section>
+
+        <!-- SLIDE 35: ENTRAR AL CAMPO - O y U (Requisito 23) -->
+        <section class="slide">
+            <div class="chapter-indicator">ENTRAR AL CAMPO</div>
+            <h1>AEIOU: Objects & Users (Objetos y Usuarios)</h1>
+            <p><strong>Objetos:</strong> Vides, postes, alambres, planillas físicas de muestreo, estaciones meteorológicas fijas, sensores de suelo.</p>
+            <p><strong>Usuarios:</strong> Operarios de campo, viticultores, responsables agronómicos, administradores.</p>
+        </section>
+
+        <!-- SLIDE 36: ENTRAR AL CAMPO - Cadena Operacional (Requisito 13) -->
+        <section class="slide">
+            <div class="chapter-indicator">ENTRAR AL CAMPO</div>
+            <h1>Cadena Operacional Interna.</h1>
+            <div class="escalera">
+                <div class="esc-step"><div class="esc-num">1</div><div class="esc-title">OPERACIÓN</div><div class="esc-desc">Operarios observan y detectan en el campo.</div></div>
+                <div class="esc-step"><div class="esc-num">2</div><div class="esc-title">VITICULTURA</div><div class="esc-desc">Agrónomo interpreta los datos y prioriza.</div></div>
+                <div class="esc-step"><div class="esc-num">3</div><div class="esc-title">GERENCIA</div><div class="esc-desc">Administración coordina recursos y toma decisiones económicas.</div></div>
+            </div>
+        </section>
+
+        <!-- ==================== PERSONAS ==================== -->
+
+        <!-- SLIDE 37: PERSONAS - Intro (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <h1>Investigación primaria en terreno.</h1>
+            <p>Entrevistamos a nueve personas clave, desde la operación diaria hasta la gerencia general, para entender las verdaderas barreras del monitoreo agronómico.</p>
+        </section>
+
+        <!-- SLIDE 38: PERSONAS - Carlos Bendek (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: SIMPLICIDAD</div>
+                    <div class="interview-name">Carlos Bendek</div>
+                    <div class="interview-role">Agrónomo</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"La fricción operacional puede destruir el valor de una buena tecnología."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 39: PERSONAS - Rodrigo Moraga (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: TEMPORADA</div>
+                    <div class="interview-name">Rodrigo Moraga</div>
+                    <div class="interview-role">Experiencia en viñedos</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"No existe un único monitoreo del viñedo: las preguntas cambian con la planta."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 40: PERSONAS - Marcelo Prado (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: COSTO</div>
+                    <div class="interview-name">Marcelo Prado</div>
+                    <div class="interview-role">Administrador de Viña</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"Aumentar información sin demostrar retorno no resuelve el problema."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 41: PERSONAS - Sergio Hormazábal (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: ESCALA</div>
+                    <div class="interview-name">Sergio Hormazábal</div>
+                    <div class="interview-role">Viticultor y Enólogo</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"En grandes superficies es difícil mantener una visión precisa y frecuente de lo que ocurre."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 42: PERSONAS - Karim Reuse (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: EXIGENCIA</div>
+                    <div class="interview-name">Karim Reuse</div>
+                    <div class="interview-role">TerraMater</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"Los casos más exigentes ayudan a revelar los límites del sistema actual."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 43: PERSONAS - Don Cloro (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: EXPERIENCIA</div>
+                    <div class="interview-name">Don Cloro</div>
+                    <div class="interview-role">Operario de Campo</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"Parte del conocimiento del viñedo vive en las personas."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 44: PERSONAS - Manuel Fuentes (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: COBERTURA</div>
+                    <div class="interview-name">Manuel Fuentes</div>
+                    <div class="interview-role">Viticultor TerraMater</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"El muestreo hace posible manejar la escala, pero sacrifica cobertura. Puede dejar diferencias locales fuera de observación."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 45: PERSONAS - Nicolás Lea-Plaza (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: VALOR</div>
+                    <div class="interview-name">Nicolás Lea-Plaza</div>
+                    <div class="interview-role">Ingeniero Agrónomo</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"La calidad del sistema no se mide por cuántos datos captura, sino por cuáles justifican ser capturados y cómo se gestionan."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 46: PERSONAS - Manuel Cisterna (Requisito 12) -->
+        <section class="slide">
+            <div class="chapter-indicator">PERSONAS</div>
+            <div class="layout-interview">
+                <div class="interview-col-left">
+                    <div class="kicker">CONCEPTO: INFORMACIÓN</div>
+                    <div class="interview-name">Manuel Cisterna</div>
+                    <div class="interview-role">Gerente General TerraMater</div>
+                </div>
+                <div class="interview-col-right">
+                    <div class="interview-insight">"La reducción de estructura organizacional genera una brecha de información, no solamente de mano de obra."</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DEFINICIÓN ==================== -->
+
+        <!-- SLIDE 47: DEFINICIÓN - Patrones repetidos (Requisito 3.11) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Aparecen patrones repetidos.</h1>
+            <ul style="font-size:32px; margin-left: 40px; line-height:1.6;">
+                <li>Limitación de cobertura y frecuencia.</li>
+                <li>Fuerte dependencia del conocimiento individual.</li>
+                <li>Alta variabilidad espacial invisible.</li>
+                <li>Información fragmentada.</li>
+                <li>Presión económica y reducción de personal en campo.</li>
+            </ul>
+        </section>
+
+        <!-- SLIDE 48: DEFINICIÓN - Causas != Problema != Efectos (Requisito 5 / 3.12) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Separar el polvo de la paja.</h1>
+            <p>La síntesis nos obliga a distinguir claramente qué es una causa del entorno, cuál es el problema que queremos resolver, y cuáles son sus efectos.</p>
+            <p style="font-size:45px; text-align:center; color:var(--wine); font-weight:600; margin-top:60px;">
+                Causas ≠ Problema ≠ Efectos
+            </p>
+        </section>
+
+        <!-- SLIDE 49: DEFINICIÓN - Causas (Requisito 5) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Las Causas (Condiciones de origen)</h1>
+            <p>Gran cantidad de plantas, escala del viñedo, variabilidad espacial natural, cambios fenológicos, limitación de personal, presión económica.</p>
+            <p style="color:var(--wine); font-weight:600;">Estas NO son el problema central.</p>
+        </section>
+
+        <!-- SLIDE 50: DEFINICIÓN - Efectos (Requisito 5) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Los Efectos (Consecuencias)</h1>
+            <p>Anomalías locales que quedan fuera de observación, mayor incertidumbre, menor trazabilidad, dificultad para priorizar recursos, reacción tardía y pérdida del historial de la planta.</p>
+        </section>
+
+        <!-- SLIDE 51: DEFINICIÓN - Árbol del problema visual (Requisito 5) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Árbol del problema visualizado.</h1>
+            <div class="problem-tree" style="margin-top:20px;">
+                <div class="pt-row"><div class="pt-efecto">Efectos: Reacción tardía e Incertidumbre</div></div>
+                <div class="pt-arrow"></div>
+                <div class="pt-problema" style="padding: 30px;">Brecha de observación requerida vs capacidad disponible</div>
+                <div class="pt-arrow"></div>
+                <div class="pt-row"><div class="pt-causa">Causas: Gran escala, Personal reducido, Variabilidad</div></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 52: DEFINICIÓN - Usuario (Requisito 6) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>El Usuario Principal.</h1>
+            <p><strong>El responsable agronómico o viticultor</strong> encargado de conocer el estado del campo y priorizar dónde inspeccionar o actuar.</p>
+            <p><em>(Usuarios relacionados: operarios, encargado de riego, administración).</em></p>
+        </section>
+
+        <!-- SLIDE 53: DEFINICIÓN - Comprador (Requisito 6) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>El Comprador / Decisor.</h1>
+            <p>Gerente general, gerente de operaciones o propietario. Quien utiliza la información en el campo (agrónomo) no necesariamente es quien decide pagar por obtenerla.</p>
+        </section>
+
+        <!-- SLIDE 54: DEFINICIÓN - Jobs To Be Done (Requisito 7) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Jobs To Be Done.</h1>
+            <ul style="font-size:36px; margin-left: 40px; line-height:1.8;">
+                <li>Detectar dónde necesita mirar.</li>
+                <li>Entender qué está cambiando.</li>
+                <li>Priorizar dónde actuar con recursos limitados.</li>
+            </ul>
+            <p style="margin-top:20px; font-weight:600;">El usuario no necesita “más datos” en abstracto.</p>
+        </section>
+
+        <!-- SLIDE 55: DEFINICIÓN - Punto de Vista (Requisito 8) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Punto de Vista (POV).</h1>
+            <p style="font-size:32px; font-style:italic; border-left:8px solid var(--vine); padding-left:30px;">"Un responsable agronómico de un viñedo cuya escala supera su capacidad de inspección necesita mantener una visión frecuente, localizada y comparable del estado del campo, porque los recorridos y muestreos disponibles no permiten observar con igual continuidad toda su variabilidad."</p>
+        </section>
+
+        <!-- SLIDE 56: DEFINICIÓN - Insight Principal (Requisito 9) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Insight Principal.</h1>
+            <p>La viticultura ya dispone de conocimiento para interpretar una planta; <strong>la dificultad está en extender esa capacidad de observación a todo el campo y mantenerla en el tiempo.</strong></p>
+        </section>
+
+        <!-- SLIDE 57: DEFINICIÓN - Customer Journey (Requisito 24) -->
+        <section class="slide">
+            <div class="chapter-indicator">DEFINICIÓN</div>
+            <h1>Customer Journey y fricciones.</h1>
+            <p>1. Aparece una pregunta agronómica.<br>2. Recorrido de campo (Muestreo ciego, muy lento).<br>3. Interpretación de la muestra (Incompleta espacialmente).<br>4. Se actúa y verifica (Se ignoran zonas no muestreadas).</p>
+        </section>
+
+        <!-- SLIDE 58: DEFINICIÓN - Problema Definido (Requisito 4 / 50) -->
+        <section class="slide layout-problem">
+            <div class="kicker">PROBLEMA DEFINIDO</div>
+            <h1 style="font-size:55px;">En viñedos de gran extensión existe una brecha entre el nivel de observación que requiere la variabilidad del cultivo y la capacidad disponible para mantener esa observación de forma frecuente, sistemática y trazable.</h1>
+        </section>
+
+        <!-- ==================== ALTERNATIVAS ==================== -->
+
+        <!-- SLIDE 59: ALTERNATIVAS - Formas de mirar (Requisito 25) -->
+        <section class="slide">
+            <div class="chapter-indicator">ALTERNATIVAS</div>
+            <h1>No existe una única forma de mirar un viñedo.</h1>
+            <p>Hoy se intenta resolver mediante scouting humano, sensores fijos, satélites, drones, sensado terrestre y plataformas digitales.</p>
+        </section>
+
+        <!-- SLIDE 60: ALTERNATIVAS - Benchmark visual (Requisito 26) -->
+        <section class="slide">
+            <div class="chapter-indicator">ALTERNATIVAS</div>
+            <h1>Benchmark de Métodos.</h1>
+            <p>Cada tecnología actual intercambia atributos: cobertura, detalle, frecuencia, proximidad, interpretación y esfuerzo humano. Las tecnologías existentes resuelven partes distintas del problema, pero ninguna cubre toda la brecha simultáneamente.</p>
+        </section>
+
+        <!-- SLIDE 61: ALTERNATIVAS - Estado del arte internacional (Requisito 27) -->
+        <section class="slide">
+            <div class="chapter-indicator">ALTERNATIVAS</div>
+            <h1>Estado del Arte Internacional en Robótica.</h1>
+            <p>Tecnologías como <strong>Scout AMP, VineScout, VINBOT, PhytoPatholoBot y Thorvald</strong> intentan abordar partes de este problema acercando plataformas de sensado autónomo directamente a la hilera.</p>
+        </section>
+
+        <!-- SLIDE 62: ALTERNATIVAS - Brecha Chile (Requisito 28) -->
+        <section class="slide">
+            <div class="chapter-indicator">ALTERNATIVAS</div>
+            <h1>La Brecha Tecnológica en Chile.</h1>
+            <p>Madurez tecnológica ≠ accesibilidad local. Es válido cuestionar: ¿están estas plataformas robóticas internacionales disponibles operando comercialmente en Chile hoy con soporte accesible?</p>
+        </section>
+
+        <!-- ==================== OPORTUNIDAD ==================== -->
+
+        <!-- SLIDE 63: OPORTUNIDAD - Mercado SAG (Requisito 29, 30) -->
+        <section class="slide">
+            <div class="chapter-indicator">OPORTUNIDAD</div>
+            <h1>Dimensión del Mercado (TAM / SAM)</h1>
+            <p><strong>TAM:</strong> Chile — vides viníferas: 116.962 hectáreas.</p>
+            <p><strong>SAM:</strong> Región Metropolitana — vides viníferas: 8.898 hectáreas (aprox. 7,6%).</p>
+            <div class="evidence-tag">CATASTRO VITÍCOLA SAG 2024 (CORREGIDO)</div>
+        </section>
+
+        <!-- SLIDE 64: OPORTUNIDAD - PESTEL (Requisito 39) -->
+        <section class="slide">
+            <div class="chapter-indicator">OPORTUNIDAD</div>
+            <h1>Contexto PESTEL.</h1>
+            <p style="font-size:24px; line-height: 1.4;">
+            <strong>P:</strong> Políticas de agua más estrictas impulsan control.<br>
+            <strong>E:</strong> Presión de márgenes exige optimizar insumos.<br>
+            <strong>S:</strong> Escasez progresiva de mano de obra en labores repetitivas de campo.<br>
+            <strong>T:</strong> Sensores y visión computacional más baratos.<br>
+            <strong>E (Ambiental):</strong> Cambio climático acentúa estrés hídrico.<br>
+            <strong>L:</strong> Trazabilidad exigida en exportación de vinos.</p>
+        </section>
+
+        <!-- ==================== CIERRE Y REFERENCIAS ==================== -->
+
+        <!-- SLIDE 65: CIERRE - Próximos pasos y Referencias (Requisito 32, 35, 36) -->
+        <section class="slide">
+            <div class="chapter-indicator">CIERRE</div>
+            <h1>Próximos pasos: Ideación.</h1>
+            <p>El problema está definido. Queda precisar operacionalmente el problema (ej. entrevista con Gerente de Operaciones pospuesta). No terminamos con la sensación de "todavía estamos buscando el problema".</p>
+            <h2 style="margin-top:40px;">Referencias APA (Muestra)</h2>
+            <p style="font-size: 20px;">Abbatantuono et al. (2024).<br>OIV (2025). <em>State of the world vine and wine sector.</em><br>ODEPA (2026).<br>SAG (2024). <em>Catastro Vitícola Nacional.</em></p>
+        </section>
+
     </div>
     <script src="app.js"></script>
 </body>
