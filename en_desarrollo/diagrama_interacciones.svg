@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="100%" height="100%">
+  <!-- Definitions -->
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 700; fill: #F6F3EC; }
+      .desc { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 400; fill: #D8CEB8; }
+      .arrow { fill: #C68A38; }
+      .box { rx: 16; }
+    </style>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#C68A38" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="transparent" />
+
+  <!-- Node 1: Operario -->
+  <g transform="translate(100, 100)">
+    <rect width="220" height="200" class="box" fill="#173126" stroke="#7D8B62" stroke-width="4" />
+    <circle cx="110" cy="70" r="30" fill="#7D8B62" />
+    <!-- User Icon simple -->
+    <path d="M80 120 C 80 90, 140 90, 140 120 Z" fill="#7D8B62" />
+    <text x="110" y="150" class="title" text-anchor="middle">Operario</text>
+    <text x="110" y="175" class="desc" text-anchor="middle">Observa y detecta</text>
+  </g>
+
+  <!-- Node 2: Viticultor -->
+  <g transform="translate(390, 100)">
+    <rect width="220" height="200" class="box" fill="#284638" stroke="#C68A38" stroke-width="4" />
+    <circle cx="110" cy="70" r="30" fill="#C68A38" />
+    <path d="M80 120 C 80 90, 140 90, 140 120 Z" fill="#C68A38" />
+    <text x="110" y="150" class="title" text-anchor="middle">Viticultor</text>
+    <text x="110" y="175" class="desc" text-anchor="middle">Interpreta y prioriza</text>
+  </g>
+
+  <!-- Node 3: Administración -->
+  <g transform="translate(680, 100)">
+    <rect width="220" height="200" class="box" fill="#6E293B" stroke="#D8CEB8" stroke-width="4" />
+    <circle cx="110" cy="70" r="30" fill="#D8CEB8" />
+    <path d="M80 120 C 80 90, 140 90, 140 120 Z" fill="#D8CEB8" />
+    <text x="110" y="150" class="title" text-anchor="middle">Administración</text>
+    <text x="110" y="175" class="desc" text-anchor="middle">Asigna recursos</text>
+  </g>
+
+  <!-- Arrows -->
+  <!-- Operario to Viticultor -->
+  <line x1="330" y1="200" x2="375" y2="200" stroke="#C68A38" stroke-width="8" marker-end="url(#arrowhead)" />
+  <text x="355" y="180" font-family="Inter" font-size="14" fill="#6E293B" font-weight="600" text-anchor="middle">Fricción 1</text>
+
+  <!-- Viticultor to Administracion -->
+  <line x1="620" y1="200" x2="665" y2="200" stroke="#C68A38" stroke-width="8" marker-end="url(#arrowhead)" />
+  <text x="645" y="180" font-family="Inter" font-size="14" fill="#6E293B" font-weight="600" text-anchor="middle">Fricción 2</text>
+
+</svg>
+
