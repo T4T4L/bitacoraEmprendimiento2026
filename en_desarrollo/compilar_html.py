@@ -140,11 +140,19 @@ html_template = f"""<!DOCTYPE html>
             }}
         }});
 
-        // Permitir avanzar haciendo clic en el área de la presentación
         document.getElementById('deck').addEventListener('click', (e) => {{
             nextSlide();
         }});
+
+        function resizeDeck() {{
+            const deck = document.getElementById('deck');
+            const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+            deck.style.transform = `scale(${{scale}})`;
+            deck.style.transformOrigin = 'center center';
+        }}
         
+        window.addEventListener('resize', resizeDeck);
+        resizeDeck();
         updateCounter();
     </script>
 </body>
